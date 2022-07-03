@@ -13,4 +13,4 @@ Tại thư mục chứa scrapy.cfg, chạy lệnh sau:
 scrapy crawl shopee -o output.json
 
 
-Note: $(<css selector>), $x(<xpath selector>) có thể test selector trên Thẻ console của web.
+Note: $(css_selector), $x(//xpath_selector) có thể test selector trên Thẻ console của web.
