@@ -6,10 +6,9 @@
 import scrapy
 
 
-class ShopeeCrawlItem(scrapy.Item):
+class WebsosanhItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    #pass
     name = scrapy.Field()
     price = scrapy.Field()
     image = scrapy.Field()

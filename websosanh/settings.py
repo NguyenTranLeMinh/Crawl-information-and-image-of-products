@@ -1,4 +1,4 @@
-# Scrapy settings for shopee_crawl project
+# Scrapy settings for websosanh project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,34 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'shopee_crawl'
+BOT_NAME = 'websosanh'
 
-SPIDER_MODULES = ['shopee_crawl.spiders']
-NEWSPIDER_MODULE = 'shopee_crawl.spiders'
-
-# Splash setting
-# ...
-SPLASH_URL = 'http://localhost:8050'
-DUPEFILTER_CLASS = 'scrapy_splash.SplashAwareDupeFilter'
-HTTPCACHE_STORAGE = 'scrapy_splash.SplashAwareFSCacheStorage'
-COOKIES_ENABLED = True # Nếu cần dùng Cookie
-SPLASH_COOKIES_DEBUG = False
-SPIDER_MIDDLEWARES = {
-    'scrapy_splash.SplashDeduplicateArgsMiddleware': 100,
-}
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy_splash.SplashCookiesMiddleware': 723,
-    'scrapy_splash.SplashMiddleware': 725,
-'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
-'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': 400,
-}
-DOWNLOAD_DELAY = 10
-# ...
+SPIDER_MODULES = ['websosanh.spiders']
+NEWSPIDER_MODULE = 'websosanh.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'shopee_crawl (+http://www.yourdomain.com)'
-USER_AGENT = 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'
+#USER_AGENT = 'websosanh (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -65,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'shopee_crawl.middlewares.ShopeeCrawlSpiderMiddleware': 543,
+#    'websosanh.middlewares.WebsosanhSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'shopee_crawl.middlewares.ShopeeCrawlDownloaderMiddleware': 543,
+#    'websosanh.middlewares.WebsosanhDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -83,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'shopee_crawl.pipelines.ShopeeCrawlPipeline': 300,
+#    'websosanh.pipelines.WebsosanhPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
