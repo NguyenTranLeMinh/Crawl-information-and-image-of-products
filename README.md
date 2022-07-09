@@ -10,7 +10,8 @@ Cú pháp:
 
 Tại thư mục chứa scrapy.cfg, chạy lệnh sau:
 
-scrapy crawl shopee -o output.json
+scrapy crawl wss -o output.json
 
+Log được ghi lại trong tệp .txt
 
 Note: $(css_selector), $x(//xpath_selector) có thể test selector trên Thẻ console của web.
